@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="8" fill="#080a0e"/>
+  <text x="3" y="22" font-family="monospace" font-size="16" font-weight="bold" fill="#f5a623">[</text>
+  <text x="9" y="22" font-family="monospace" font-size="11" font-weight="bold" fill="#e8eaf0">VK</text>
+  <text x="21" y="22" font-family="monospace" font-size="16" font-weight="bold" fill="#f5a623">]</text>
+</svg>
