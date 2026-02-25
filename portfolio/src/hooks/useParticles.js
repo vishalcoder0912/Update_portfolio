@@ -15,11 +15,13 @@ export default function useParticles(canvasRef) {
     const ro = new ResizeObserver(resize);
     ro.observe(canvas);
 
-    canvas.addEventListener('mousemove', (e) => {
+    const onMouseMove = (e) => {
       const r = canvas.getBoundingClientRect();
       mouse = { x: e.clientX - r.left, y: e.clientY - r.top };
-    });
-    canvas.addEventListener('mouseleave', () => { mouse = { x: null, y: null }; });
+    };
+    const onMouseLeave = () => { mouse = { x: null, y: null }; };
+    canvas.addEventListener('mousemove', onMouseMove);
+    canvas.addEventListener('mouseleave', onMouseLeave);
 
     class Dot {
       constructor() { this.reset(); }
@@ -40,7 +42,7 @@ export default function useParticles(canvasRef) {
         if (mouse.x !== null) {
           const dx = this.x - mouse.x, dy = this.y - mouse.y;
           const d = Math.sqrt(dx*dx+dy*dy);
-          if (d < 100) { const f = (100-d)/100*0.6; this.x += dx/d*f; this.y += dy/d*f; }
+          if (d > 0 && d < 100) { const f = (100-d)/100*0.6; this.x += dx/d*f; this.y += dy/d*f; }
         }
       }
       draw() {
@@ -74,6 +76,11 @@ export default function useParticles(canvasRef) {
       animId = requestAnimationFrame(loop);
     };
     loop();
-    return () => { cancelAnimationFrame(animId); ro.disconnect(); };
+    return () => {
+      cancelAnimationFrame(animId);
+      ro.disconnect();
+      canvas.removeEventListener('mousemove', onMouseMove);
+      canvas.removeEventListener('mouseleave', onMouseLeave);
+    };
   }, [canvasRef]);
 }

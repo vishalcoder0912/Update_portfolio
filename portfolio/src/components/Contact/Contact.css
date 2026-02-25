@@ -52,6 +52,8 @@
   font-size: 0.9rem;
   color: var(--text-secondary);
   transition: color 0.2s ease;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 a.contact-detail__value:hover { color: var(--accent); }
@@ -120,12 +122,14 @@ a.contact-detail__value:hover { color: var(--accent); }
   font-size: 0.95rem;
 }
 
-.contact__success {
+.contact__message {
   font-size: 0.85rem;
-  color: var(--accent);
   text-align: center;
   font-family: var(--font-mono);
 }
+
+.contact__message--success { color: var(--accent); }
+.contact__message--error { color: #ef4444; }
 
 /* Spinner */
 .spinner {
@@ -141,4 +145,6 @@ a.contact-detail__value:hover { color: var(--accent); }
 
 @media (max-width: 768px) {
   .contact__grid { grid-template-columns: 1fr; }
+  .contact-info-card,
+  .contact__form { padding: 1.5rem; }
 }

@@ -2,7 +2,6 @@ node_modules
 dist
 .vercel
 *.log
-{src
 
 # Keep package manifests tracked even if parent-level ignore rules are broad.
 !package.json

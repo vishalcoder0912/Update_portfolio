@@ -8,6 +8,8 @@ export default function Cursor() {
   const anim = useRef(null);
 
   useEffect(() => {
+    if (!window.matchMedia('(pointer: fine)').matches) return;
+
     const onMove = (e) => {
       pos.current = { x: e.clientX, y: e.clientY };
       if (dot.current) { dot.current.style.left = e.clientX+'px'; dot.current.style.top = e.clientY+'px'; }
@@ -15,7 +17,8 @@ export default function Cursor() {
     const enter = () => document.body.classList.add('cursor-hover');
     const leave = () => document.body.classList.remove('cursor-hover');
     document.addEventListener('mousemove', onMove);
-    document.querySelectorAll('a,button,[data-hover]').forEach(el => {
+    const interactiveEls = Array.from(document.querySelectorAll('a,button,[data-hover]'));
+    interactiveEls.forEach(el => {
       el.addEventListener('mouseenter', enter);
       el.addEventListener('mouseleave', leave);
     });
@@ -27,7 +30,15 @@ export default function Cursor() {
       anim.current = requestAnimationFrame(tick);
     };
     tick();
-    return () => { document.removeEventListener('mousemove', onMove); cancelAnimationFrame(anim.current); };
+    return () => {
+      document.removeEventListener('mousemove', onMove);
+      interactiveEls.forEach((el) => {
+        el.removeEventListener('mouseenter', enter);
+        el.removeEventListener('mouseleave', leave);
+      });
+      document.body.classList.remove('cursor-hover');
+      cancelAnimationFrame(anim.current);
+    };
   }, []);
 
   return (

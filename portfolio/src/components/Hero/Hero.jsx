@@ -22,11 +22,12 @@ function Sphere3D() {
     let angle = 0, mX = 0, mY = 0, tX = 0, tY = 0;
     const R = 118, RINGS = 11, DPR = 22;
 
-    canvas.addEventListener('mousemove', e => {
+    const onMouseMove = (e) => {
       const r = canvas.getBoundingClientRect();
       mX = ((e.clientX - r.left) / S - 0.5) * 0.35;
       mY = ((e.clientY - r.top) / S - 0.5) * 0.35;
-    });
+    };
+    canvas.addEventListener('mousemove', onMouseMove);
 
     const proj = (x, y, z, rX, rY) => {
       const cy = Math.cos(rY), sy = Math.sin(rY);
@@ -75,7 +76,10 @@ function Sphere3D() {
       id = requestAnimationFrame(draw);
     };
     draw();
-    return () => cancelAnimationFrame(id);
+    return () => {
+      cancelAnimationFrame(id);
+      canvas.removeEventListener('mousemove', onMouseMove);
+    };
   }, []);
   return <canvas ref={ref} className="hero__sphere-canvas" />;
 }
@@ -122,7 +126,13 @@ export default function Hero() {
           <motion.p className="hero__summary" variants={item}>{summary}</motion.p>
 
           <motion.div className="hero__ctas" variants={item}>
-            <a href={resumeUrl} className="btn-primary" download data-hover>
+            <a
+              href={resumeUrl}
+              className="btn-primary"
+              download="Vishal_Kumar_Resume.pdf"
+              type="application/pdf"
+              data-hover
+            >
               <DownloadIcon /> Download Resume
             </a>
             <button className="btn-secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior:'smooth'})} data-hover>

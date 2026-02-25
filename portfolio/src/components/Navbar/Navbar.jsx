@@ -78,7 +78,12 @@ export default function Navbar() {
             <button className="theme-toggle" onClick={toggle} aria-label="Toggle theme">
               {theme === 'dark' ? '◑' : '◐'}
             </button>
-            <a href={personalInfo.resumeUrl} className="btn-primary navbar__cta" download>
+            <a
+              href={personalInfo.resumeUrl}
+              className="btn-primary navbar__cta"
+              download="Vishal_Kumar_Resume.pdf"
+              type="application/pdf"
+            >
               Resume
             </a>
             {/* Hamburger */}

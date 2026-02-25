@@ -10,7 +10,7 @@ export const personalInfo = {
   email: "vishal.kumar.1304200504@gmail.com",
   phone: "+91 93197 58795",
   location: "Noida, Sector 45, UP",
-  resumeUrl: "/Vishal_Resume.pdf",
+  resumeUrl: "/Vishal_Kumar_Professional_Resume1.pdf",
   social: {
     github: "https://github.com/vishalcoder0912",
     linkedin: "https://linkedin.com/in/vishal-kumar",

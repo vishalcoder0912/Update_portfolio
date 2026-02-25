@@ -105,8 +105,8 @@ export default function Skills() {
                 <span className="mini-cat__name">{category}</span>
               </div>
               <div className="mini-cat__dots">
-                {items.map(({ level }) => (
-                  <div key={level+Math.random()} className="mini-dot"
+                {items.map(({ name, level }, itemIndex) => (
+                  <div key={`${category}-${name}-${itemIndex}`} className="mini-dot"
                     style={{ width: `${level}%`, background: COLORS[ci] + '88' }} />
                 ))}
               </div>

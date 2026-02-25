@@ -89,3 +89,8 @@
   .footer__brand { grid-column: 1 / -1; }
   .footer__bottom { flex-direction: column; text-align: center; }
 }
+
+@media (max-width: 520px) {
+  .footer__top { grid-template-columns: 1fr; gap: 2rem; }
+  .footer__brand { grid-column: auto; }
+}
