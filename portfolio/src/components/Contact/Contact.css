@@ -1,9 +1,6 @@
 .contact__grid {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 2rem;
   margin-top: 3rem;
-  align-items: start;
+  max-width: 760px;
 }
 
 .contact-info-card {
@@ -49,14 +46,16 @@
 }
 
 .contact-detail__value {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-secondary);
   transition: color 0.2s ease;
   overflow-wrap: anywhere;
   word-break: break-word;
 }
 
-a.contact-detail__value:hover { color: var(--accent); }
+a.contact-detail__value:hover {
+  color: var(--accent);
+}
 
 .contact-socials {
   display: flex;
@@ -73,78 +72,12 @@ a.contact-detail__value:hover { color: var(--accent); }
   transition: color 0.2s ease;
 }
 
-.contact-social-link:hover { color: var(--accent); }
-
-/* Form */
-.contact__form {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
+.contact-social-link:hover {
+  color: var(--accent);
 }
-
-.form-group { display: flex; flex-direction: column; gap: 0.5rem; }
-
-.form-label {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.form-input {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0.85rem 1rem;
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  color: var(--text-primary);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  outline: none;
-  width: 100%;
-  resize: none;
-}
-
-.form-input::placeholder { color: var(--text-muted); }
-
-.form-input:focus {
-  border-color: var(--border-accent);
-  box-shadow: 0 0 0 3px var(--accent-glow);
-}
-
-.form-textarea { min-height: 130px; resize: vertical; }
-
-.contact__submit {
-  width: 100%;
-  justify-content: center;
-  font-size: 0.95rem;
-}
-
-.contact__message {
-  font-size: 0.85rem;
-  text-align: center;
-  font-family: var(--font-mono);
-}
-
-.contact__message--success { color: var(--accent); }
-.contact__message--error { color: #ef4444; }
-
-/* Spinner */
-.spinner {
-  width: 14px;
-  height: 14px;
-  border: 2px solid rgba(0,0,0,0.3);
-  border-top-color: #000;
-  border-radius: 50%;
-  animation: spin 0.7s linear infinite;
-}
-
-@keyframes spin { to { transform: rotate(360deg); } }
 
 @media (max-width: 768px) {
-  .contact__grid { grid-template-columns: 1fr; }
-  .contact-info-card,
-  .contact__form { padding: 1.5rem; }
+  .contact-info-card {
+    padding: 1.5rem;
+  }
 }

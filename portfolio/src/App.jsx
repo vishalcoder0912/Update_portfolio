@@ -5,6 +5,7 @@ import Cursor from './components/UI/Cursor';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Stats from './components/Stats/Stats';
+import Achievements from './components/Achievements/Achievements';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
@@ -31,6 +32,7 @@ export default function App() {
           <main>
             <Hero />
             <Stats />
+            <Achievements />
             <About />
             <Skills />
             <Projects />

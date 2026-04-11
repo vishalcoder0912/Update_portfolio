@@ -1,83 +1,156 @@
-// ============================================
-// PORTFOLIO DATA — Vishal Kumar
-// ============================================
-
 export const personalInfo = {
   name: "Vishal Kumar",
-  title: "BCA Student & Developer",
-  tagline: "& Cybersecurity Learner",
-  summary: "Passionate BCA student from IMS Noida building real-world projects with C/C++, Python, and the MERN stack. Currently diving deep into cybersecurity while shipping apps that solve real problems.",
+  title: "Full-Stack MERN Developer",
+  tagline: "React, Node.js, MongoDB",
+  summary:
+    "Full-Stack MERN Developer and BCA final-year student at IMS Noida, building responsive interfaces, scalable APIs, and practical products. Currently working as a Web Developer at NoirSane, active on GitHub, and open to internships, entry-level roles, and strong freelance collaborations.",
   email: "vishal.kumar.1304200504@gmail.com",
   phone: "+91 93197 58795",
-  location: "Noida, Sector 45, UP",
-  resumeUrl: "/Vishal_Kumar_Professional_Resume1.pdf",
+  location: "Noida, Uttar Pradesh, India",
+  resumeUrl: "/Vishal_resume_intershala(web_dev).pdf",
+  resumeDownloadName: "Vishal_Kumar_Resume.pdf",
+  availability: "Open to internships, entry-level roles, and freelance collaborations",
   social: {
     github: "https://github.com/vishalcoder0912",
-    linkedin: "https://linkedin.com/in/vishal-kumar",
-    twitter: "https://twitter.com/VishalXTech",
+    linkedin: "https://www.linkedin.com/in/vishal-kumar-0b6789316",
+    twitter: null,
   },
 };
 
+export const stats = [
+  { num: 54, suffix: "+", label: "GitHub Repos", icon: "GH" },
+  { num: 238, suffix: "", label: "Yearly Contributions", icon: "CTB" },
+  { num: 500, suffix: "+", label: "LinkedIn Connections", icon: "IN" },
+  { num: 10, suffix: "", label: "Exora Finalist", icon: "TOP" },
+];
+
+export const achievements = [
+  {
+    id: 1,
+    eyebrow: "Hackathon Result",
+    metric: "Top 10 / 380+",
+    title: "Exora finalist after reaching the offline round",
+    description:
+      "Advanced from more than 380 registered teams into the Top 10 finalists at Exora: Unveil The Build, gaining strong product, presentation, and mentor-feedback experience.",
+    tags: ["Hackathon", "Product Thinking", "Presentation"],
+  },
+  {
+    id: 2,
+    eyebrow: "GitHub Momentum",
+    metric: "238 contributions",
+    title: "Consistent builder across personal and collaborative work",
+    description:
+      "Maintained visible shipping momentum across 54 public repositories and contributions to many collaborative projects, with GitHub achievements including Pull Shark x2, YOLO, and Quickdraw.",
+    tags: ["GitHub", "Open Source", "Consistency"],
+  },
+  {
+    id: 3,
+    eyebrow: "Security Learning",
+    metric: "PortSwigger labs",
+    title: "Hands-on access control and privilege escalation practice",
+    description:
+      "Completed multiple Web Security Academy labs covering unprotected admin functionality, role manipulation, and insecure authorization flows, reinforcing a server-side security mindset.",
+    tags: ["Burp Suite", "Access Control", "AppSec"],
+  },
+  {
+    id: 4,
+    eyebrow: "Recognized Growth",
+    metric: "3 certifications",
+    title: "Credible progress across innovation, security, and soft skills",
+    description:
+      "Earned Innovation Ambassador Foundation Training, Palo Alto Networks Cybersecurity Foundation, and GeeksforGeeks professional development certification.",
+    tags: ["MHRD", "Palo Alto", "GeeksforGeeks"],
+  },
+];
+
 export const aboutMe = {
   bio: [
-    "I'm a BCA student at IMS Noida with hands-on experience in programming, event coordination, and customer support. I love building things — from terminal-based banking systems in C++ to full-stack web apps using the MERN stack.",
-    "Currently leveling up in cybersecurity and MERN stack development. I believe in learning by doing: every project I ship teaches me something new. I'm a self-described 'jack of all trades' and proud of it.",
+    "I am a BCA final-year student at IMS Noida focused on building full-stack MERN products that feel clean on the frontend and dependable on the backend. My current work at NoirSane is helping me apply React, Node.js, MongoDB, and API design on real products instead of only classroom projects.",
+    "Your GitHub and LinkedIn profile show a strong pattern: consistent shipping, visible collaboration, real hackathon exposure, and disciplined learning across web development and cybersecurity. That mix matters because it signals execution, curiosity, and the ability to keep improving in public.",
   ],
   strengths: [
-    { icon: "🔒", label: "Cybersecurity Learner", desc: "Actively studying ethical hacking, network security & CTFs" },
-    { icon: "💻", label: "Full-Stack Curious", desc: "Building MERN apps — from backend APIs to polished UIs" },
-    { icon: "🎤", label: "Leader & Communicator", desc: "1st in Debate, Head of Discipline Committee, Radio Host" },
-    { icon: "📸", label: "Creative Producer", desc: "Photography, videography & podcast production experience" },
+    {
+      icon: "01",
+      label: "Product Builder",
+      desc: "Builds practical full-stack apps with React, Node.js, MongoDB, and structured frontend architecture.",
+    },
+    {
+      icon: "02",
+      label: "Consistent Learner",
+      desc: "Shows steady public progress through GitHub activity, certifications, and ongoing MERN and DSA practice.",
+    },
+    {
+      icon: "03",
+      label: "Security Mindset",
+      desc: "Learns by doing through PortSwigger labs focused on broken access control and secure backend validation.",
+    },
+    {
+      icon: "04",
+      label: "Communication Edge",
+      desc: "Backed by hackathon presentations, collaborative work, and a profile that clearly communicates technical direction.",
+    },
   ],
   techStack: [
-    "C", "C++", "Python", "HTML", "CSS", "JavaScript",
-    "React", "Node.js", "MongoDB", "Git", "Canva", "TypeScript"
+    "React.js",
+    "JavaScript",
+    "TypeScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "REST APIs",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "Git",
+    "GitHub",
+    "Python",
+    "C++",
   ],
 };
 
 export const skills = [
   {
-    category: "Programming",
-    icon: "◈",
+    category: "Frontend",
+    icon: "",
     items: [
-      { name: "C / C++", level: 80 },
-      { name: "Python", level: 72 },
-      { name: "JavaScript", level: 65 },
-      { name: "TypeScript", level: 50 },
-      { name: "HTML / CSS", level: 85 },
+      { name: "React.js", level: 82 },
+      { name: "JavaScript (ES6+)", level: 84 },
+      { name: "HTML5 / CSS3", level: 88 },
+      { name: "Tailwind CSS", level: 78 },
+      { name: "React Router", level: 74 },
     ],
   },
   {
-    category: "MERN Stack",
-    icon: "◉",
+    category: "Backend",
+    icon: "",
     items: [
-      { name: "React.js", level: 60 },
-      { name: "Node.js / Express", level: 55 },
-      { name: "MongoDB", level: 55 },
-      { name: "REST APIs", level: 62 },
-      { name: "Tailwind CSS", level: 58 },
+      { name: "Node.js", level: 76 },
+      { name: "Express.js", level: 74 },
+      { name: "REST APIs", level: 80 },
+      { name: "MongoDB", level: 74 },
+      { name: "SQL", level: 60 },
     ],
   },
   {
-    category: "Cybersecurity",
-    icon: "◎",
+    category: "Programming & Tools",
+    icon: "",
     items: [
-      { name: "Networking Fundamentals", level: 60 },
-      { name: "Linux & Shell", level: 55 },
-      { name: "OWASP Top 10", level: 45 },
-      { name: "CTF Challenges", level: 40 },
-      { name: "Ethical Hacking (Learning)", level: 40 },
+      { name: "TypeScript", level: 68 },
+      { name: "Python", level: 64 },
+      { name: "C++", level: 62 },
+      { name: "Git / GitHub", level: 86 },
+      { name: "Windows Terminal", level: 72 },
     ],
   },
   {
-    category: "Tools & Soft Skills",
-    icon: "◇",
+    category: "Security & Problem Solving",
+    icon: "",
     items: [
-      { name: "Git / GitHub", level: 78 },
-      { name: "Canva", level: 85 },
-      { name: "Leadership", level: 90 },
-      { name: "Teamwork", level: 92 },
-      { name: "Communication", level: 88 },
+      { name: "Cybersecurity Fundamentals", level: 70 },
+      { name: "Burp Suite Labs", level: 66 },
+      { name: "Access Control Testing", level: 68 },
+      { name: "DSA Practice", level: 78 },
+      { name: "Communication", level: 84 },
     ],
   },
 ];
@@ -85,10 +158,11 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    title: "Uber Clone",
-    description: "Full-stack ride-hailing app built with the MERN stack. Features user and driver authentication, live location simulation, and trip booking flow — a hands-on deep dive into real-world app architecture.",
-    tags: ["React", "Node.js", "MongoDB", "Express", "TypeScript"],
-    github: "https://github.com/Vishal-Mernstack/uber-clone",
+    title: "CampusFlow Hub",
+    description:
+      "A TypeScript-driven campus workflow project that reflects recent collaborative development work, structured app organization, and a stronger product-first approach.",
+    tags: ["TypeScript", "React", "Node.js", "Architecture"],
+    github: "https://github.com/vishalcoder0912/campusflow-hub",
     live: null,
     featured: true,
     gradient: "linear-gradient(135deg, #0f1923 0%, #1a1f2e 100%)",
@@ -96,10 +170,11 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Health Hub",
-    description: "Healthcare platform built with TypeScript and React. Provides a clean interface for health tracking and resource discovery. Demonstrates component architecture and type-safe development practices.",
-    tags: ["TypeScript", "React", "Tailwind CSS", "Node.js"],
-    github: "https://github.com/vishalcoder0912/health-hub-main--1-",
+    title: "Care Flow",
+    description:
+      "A TypeScript-based web app focused on streamlining care coordination workflows with reusable components, cleaner data flow, and maintainable front-end structure.",
+    tags: ["TypeScript", "React", "Tailwind CSS"],
+    github: "https://github.com/vishalcoder0912/care-flow",
     live: null,
     featured: true,
     gradient: "linear-gradient(135deg, #0d2e1a 0%, #0d1a2e 100%)",
@@ -107,10 +182,11 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Banking System",
-    description: "Command-line banking application built in C, C++ and Python. Manages user accounts, deposits, withdrawals, and transaction history — my first major project and still a personal favourite.",
-    tags: ["C", "C++", "Python", "File I/O"],
-    github: "https://github.com/vishalcoder0912",
+    title: "Health Hub",
+    description:
+      "Healthcare platform built with React and TypeScript, designed around clearer interfaces, modular components, and practical user-facing workflows.",
+    tags: ["TypeScript", "React", "Tailwind CSS", "Node.js"],
+    github: "https://github.com/vishalcoder0912/health-hub-main--1-",
     live: null,
     featured: false,
     gradient: "linear-gradient(135deg, #1a1a0d 0%, #2e2e0d 100%)",
@@ -118,10 +194,11 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Smart Budget Buddy",
-    description: "Personal finance tracker built with TypeScript. Helps users log income and expenses, view summaries, and stay on top of their monthly budget — a practical tool with a clean interface.",
-    tags: ["TypeScript", "React", "Local Storage"],
-    github: "https://github.com/vishalcoder0912/smart-budget-buddy",
+    title: "ChatApp",
+    description:
+      "A chat-focused project built to explore real-time user flows, clean UI handling, and stronger full-stack thinking around communication features.",
+    tags: ["JavaScript", "React", "Node.js"],
+    github: "https://github.com/vishalcoder0912/chatapp",
     live: null,
     featured: false,
     gradient: "linear-gradient(135deg, #1a0d2e 0%, #2e0d1a 100%)",
@@ -129,10 +206,11 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Care Flow",
-    description: "A TypeScript-based web app focused on streamlining care coordination workflows. Built with React and a modular component structure to support clean data flow and maintainability.",
-    tags: ["TypeScript", "React", "Tailwind CSS"],
-    github: "https://github.com/vishalcoder0912/care-flow",
+    title: "Smart Budget Buddy",
+    description:
+      "Personal finance tracker built with TypeScript that helps users log income and expenses, review summaries, and stay in control of monthly budgeting.",
+    tags: ["TypeScript", "React", "Local Storage"],
+    github: "https://github.com/vishalcoder0912/smart-budget-buddy",
     live: null,
     featured: false,
     gradient: "linear-gradient(135deg, #0d1a2e 0%, #1a2e2e 100%)",
@@ -140,10 +218,11 @@ export const projects = [
   },
   {
     id: 6,
-    title: "Restaurant Website",
-    description: "Responsive static restaurant website built with pure HTML and CSS. Focused on delivering a clean, engaging user interface — one of my first front-end projects and a foundation for everything since.",
-    tags: ["HTML", "CSS"],
-    github: "https://github.com/vishalcoder0912/portfolio-website",
+    title: "Retry The Project",
+    description:
+      "A collaborative TypeScript repository where architecture, restructuring, and contribution flow became part of the learning process, including a pull request that generated detailed discussion.",
+    tags: ["TypeScript", "Collaboration", "Code Review"],
+    github: "https://github.com/vishalcoder0912/retry-the-project",
     live: null,
     featured: false,
     gradient: "linear-gradient(135deg, #2e1a0d 0%, #1a0d0d 100%)",
@@ -154,31 +233,44 @@ export const projects = [
 export const experience = [
   {
     id: 1,
-    role: "Event Coordinator & Media Producer",
-    company: "Radio Salam Namaste",
+    role: "Web Developer",
+    company: "NoirSane",
     companyUrl: "#",
-    duration: "Aug 2023 — Jun 2024",
-    location: "Noida, UP",
-    type: "Volunteer / Part-time",
+    duration: "Current role",
+    location: "Noida, India",
+    type: "Professional",
     achievements: [
-      "Coordinated on-ground events and managed end-to-end event planning logistics",
-      "Handled photography, videography, and podcast recordings for the station",
-      "Built strong teamwork and cross-functional communication skills in a fast-paced media environment",
-      "Gained hands-on experience in content production and audience engagement",
+      "Builds and improves real-world web products using React, Node.js, MongoDB, and practical API integration.",
+      "Translates classroom knowledge into production-minded development across frontend polish and backend logic.",
+      "Works in a delivery environment that strengthens debugging, iteration speed, and product ownership.",
     ],
   },
   {
     id: 2,
+    role: "Event Coordinator & Media Producer",
+    company: "Radio Salam Namaste",
+    companyUrl: "#",
+    duration: "Aug 2023 - Jun 2024",
+    location: "Noida, India",
+    type: "Volunteer / Part-time",
+    achievements: [
+      "Coordinated on-ground events and managed end-to-end planning logistics.",
+      "Handled photography, videography, and podcast recordings for the station.",
+      "Built strong teamwork and cross-functional communication skills in a fast-paced media environment.",
+    ],
+  },
+  {
+    id: 3,
     role: "Customer Support Executive",
     company: "Lumax",
     companyUrl: "#",
-    duration: "Apr 2022 — Aug 2022",
-    location: "Noida, UP",
+    duration: "Apr 2022 - Aug 2022",
+    location: "Noida, India",
     type: "Internship",
     achievements: [
-      "Handled inbound and outbound customer calls, recorded feedback accurately, and escalated issues as needed",
-      "Collaborated with team members to enhance service delivery and maintain SLA targets",
-      "Developed strong communication, multitasking, and problem-solving skills under pressure",
+      "Handled inbound and outbound customer communication while tracking issues accurately.",
+      "Collaborated with team members to maintain service quality and response standards.",
+      "Built communication, multitasking, and problem-solving skills under pressure.",
     ],
   },
 ];
@@ -187,32 +279,42 @@ export const education = [
   {
     degree: "Bachelor of Computer Applications (BCA)",
     institution: "IMS Noida, Uttar Pradesh",
-    year: "2023 — Present",
-    grade: "Pursuing",
+    year: "2023 - Present",
+    grade: "Final Year",
     highlights: [
-      "Specialization in Advanced Manufacturing & emerging tech",
-      "Active member — Discipline Committee Head",
-      "Continuously building projects alongside coursework",
+      "Focused on full-stack MERN development, DSA practice, and real project building.",
+      "Active learner bridging academics with hackathons, certifications, and product work.",
+      "Profile direction shows clear alignment with internships and entry-level software roles.",
     ],
   },
   {
-    degree: "Higher Secondary Education (Commerce)",
-    institution: "Amar School, Sector 39, Noida",
-    year: "2021 — 2023",
-    grade: "Commerce Stream",
-    highlights: [
-      "1st Place — School Debate Competition",
-      "Developed leadership and public speaking foundation",
-    ],
-  },
-  {
-    degree: "C / C++ Programming Certification",
-    institution: "Udemy",
-    year: "2022",
+    degree: "Innovation Ambassador Foundation Training",
+    institution: "MHRD Innovation Cell, Government of India",
+    year: "2025",
     grade: "Certified",
     highlights: [
-      "Completed comprehensive C and C++ programming course",
-      "Applied skills directly to Banking System project",
+      "Built stronger exposure to innovation, critical thinking, and real-world problem solving.",
+      "Supports a product mindset beyond pure coding and reinforces startup-oriented thinking.",
+    ],
+  },
+  {
+    degree: "Cybersecurity Foundation",
+    institution: "Palo Alto Networks Academy",
+    year: "2025",
+    grade: "Certified",
+    highlights: [
+      "Strengthened understanding of cybersecurity concepts, threats, and best practices.",
+      "Complements hands-on PortSwigger lab work with formal security fundamentals.",
+    ],
+  },
+  {
+    degree: "Soft Skills Course: Complete Professional Development",
+    institution: "GeeksforGeeks",
+    year: "2025",
+    grade: "Completed",
+    highlights: [
+      "Improved communication, leadership, and professional readiness for team environments.",
+      "Supports clearer collaboration, presentation, and career-facing communication.",
     ],
   },
 ];

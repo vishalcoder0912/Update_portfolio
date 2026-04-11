@@ -5,6 +5,7 @@ import { personalInfo } from '../../data/portfolio';
 import './Navbar.css';
 
 const NAV_ITEMS = [
+  { label: 'Achievements', href: '#achievements' },
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
@@ -12,7 +13,7 @@ const NAV_ITEMS = [
   { label: 'Contact', href: '#contact' },
 ];
 
-const SECTION_IDS = ['about', 'skills', 'projects', 'experience', 'education', 'contact'];
+const SECTION_IDS = ['achievements', 'about', 'skills', 'projects', 'experience', 'education', 'contact'];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -81,7 +82,7 @@ export default function Navbar() {
             <a
               href={personalInfo.resumeUrl}
               className="btn-primary navbar__cta"
-              download="Vishal_Kumar_Resume.pdf"
+              download={personalInfo.resumeDownloadName}
               type="application/pdf"
             >
               Resume
